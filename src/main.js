@@ -1,13 +1,17 @@
 const header = document.querySelectorAll('.Head')
 const MainSec = document.querySelectorAll('.MainSec')
 
-console.log("main js is running")
-window.addEventListener('load', () => {
-   // document.getElementById("preloader").style.display = "none"
-   console.log("PAGE LOADED FIRE")
-   const preloader = document.getElementById("preloader")
-   console.log("PRELOADER", preloader)
-})
+// console.log("main js is running")
+// window.addEventListener('load', () => {
+//    // document.getElementById("preloader").style.display = "none"
+//    console.log("PAGE LOADED FIRE")
+//    const preloader = document.getElementById("preloader")
+//    console.log("PRELOADER", preloader)
+// })
+const preloader = document.getElementById("preloader")
+if (preloader) {
+   preloader.style.display = "none"
+}
 
 const imagecont = document.querySelector(".images")
 const totalimages = document.querySelectorAll(".images img");
