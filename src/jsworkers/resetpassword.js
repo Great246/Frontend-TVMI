@@ -12,7 +12,9 @@ resetform.addEventListener('submit', async (e)=> {
     } else if (password !== confirmPassword) {
         return console.log("Password doesn't match")
     }
-    const res = await api.post(`/api/auth/resetPassword/${token}`, { password })
+    const res = await api.post(`/api/auth/resetPassword/${token}`, { password }, {
+      withCredentials: true,
+    })
    
     if (res.data.success) {
         window.location.href = "/auth/login.html"

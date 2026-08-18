@@ -1,4 +1,3 @@
-import axios from 'axios'
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import api from "../api/axios.js";
@@ -58,10 +57,13 @@ const confirmPassword = document.getElementById("confirmPassword").value
             position: "right",
             backgroundColor: "#ef4444",
         }).showToast()
+        return
     }
     
     const res = await api.post('/api/auth/register',
-        {fullname, Username, Email, phonenumber,password, confirmPassword})
+        {fullname, Username, Email, phonenumber,password, confirmPassword}, {
+      withCredentials: true,
+    })
 
     if (res.data.success) {
         Toastify({

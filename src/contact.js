@@ -12,7 +12,9 @@ const name = document.getElementById("name").value
 const subject = document.getElementById("subject").value
 const message = document.getElementById("message").value
    
-const response = await api.post('/api/contact/createcontact', {email, name, subject, message})
+const response = await api.post('/api/contact/createcontact', {email, name, subject, message}, {
+      withCredentials: true,
+    })
 
 if (response.data.success) {
     Toastify({
