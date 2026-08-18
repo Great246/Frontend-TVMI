@@ -1,7 +1,7 @@
 const header = document.querySelectorAll('.Head')
 const MainSec = document.querySelectorAll('.MainSec')
 
-
+console.log("main js is running")
 window.addEventListener('load', () => {
    document.getElementById("preloader").style.display = "none"
 })
