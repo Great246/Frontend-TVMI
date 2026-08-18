@@ -5,7 +5,7 @@ const loginform = document.getElementById("loginform")
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const logoutBox = document.querySelectorAll(".logoutBox")
 
-if (loginform) {
+
     loginform.addEventListener("submit", async (e)=> {
     e.preventDefault()
      
@@ -75,7 +75,6 @@ if (loginform) {
    }      
 })
 
-}
 
 
 

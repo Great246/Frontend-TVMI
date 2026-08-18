@@ -4,10 +4,10 @@ import api from "./api/axios.js";
 const checkAdmin = async () => {
   console.log("getuser is running");
   try {
-    const det = await api.get("/api/auth/me", {
+    const response = await api.get("/api/auth/me", {
       withCredentials: true,})
 
-      if (det.data.user.role !== "admin") {
+      if (response.data.user.role !== "admin") {
         window.location.href = "/"
         return
       }
