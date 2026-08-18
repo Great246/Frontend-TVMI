@@ -1,8 +1,7 @@
-import axios from "axios";
 import api from "./api/axios.js";
 const eventplace = document.getElementById("eventplace")
 const getUsers = async () => {
-    const res = await api.get("/api/events/")
+    const res = await api.get("https://backend-tvmi.onrender.com/api/events/")
 
     const mainevents = res.data
   console.log(mainevents)
