@@ -1,8 +1,6 @@
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import api from "../api/axios.js";
-
-const loginform = document.getElementById("loginform")
 const signupform = document.getElementById("signupform")
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
