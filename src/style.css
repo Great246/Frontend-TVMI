@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./assets/fonts/Manrope-VariableFont_wght.ttf) format("truetype");
+}
+
+
+
+.font-playfair {
+    font-family: "PlayfairDisplay", serif;
+}
+.font-manrope {
+    font-family: "Manrope", serif;
+}
+body {
+    font-family: "Manrope", serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "PlayfairDisplay", serif;
+}
+.nav-link.active {
+    @apply bg-yellow-500
+    text-gray-900 font-semibold p-2
+}

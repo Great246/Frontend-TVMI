@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/remixicon/remixicon.css">
+</head>
+<body class="hidden">
+    <div class="flex flex-col md:flex-row gap-0 relative">
+<div id="box" class="bg-gray-950 text-white z-100 hidden md:block min-h-screen fixed p-5 w-20 transition-all ease-in duration-200">
+  <i id="close" class="ri-arrow-right-line bg-white text-gray-950 text-xl rounded-full px-1 absolute border -right-3 border-gray-800"></i>
+    <div class="flex items-center gap-4">
+<img src="/images/1757252975291-removebg-preview.png" class="w-10 h-10">
+    <p id="" class="textTv transition-all duration-300 text-lg font-extrabold hidden">TVMI Dashboard</p>
+    </div>
+    <div class="mt-5 flex flex-col gap-3">
+        <a href="dashbord.html" class="nav-link hover:bg-gray-800  hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-dashboard-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Dashboard</p>
+        </div>
+        </a>
+
+        <a href="members.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-group-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Members</p>
+        </div>
+        </a>
+
+        <a href="events.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-calendar-event-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Events</p>
+        </div>
+        </a>
+
+        <a href="prayerreq.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-hand-heart-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Prayer Request</p>
+        </div>
+        </a>
+
+        <a href="messages.html" class="nav-link active hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-mail-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Messages</p>
+        </div>
+        </a>
+
+        <a href="images.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <div class="flex gap-4 items-center">
+            <i class="ri-settings-3-line text-2xl"></i>
+            <p id="" class="textTv font-bold hidden">Gallery</p>
+        </div>
+        </a>
+
+        <a href="" class="mt-10">
+            <div href="/auth/login.html" class="logoutBox flex gap-4 items-center nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+            <i class="ri-logout-box-r-line text-2xl"></i>
+            <p class="textTv font-bold hidden">Logout</p>
+        </div>
+        </a>
+    </div>
+  
+</div>
+<div class="relative">
+  <div class="bg-gray-950  md:h-15 md:bg-white text-white md:text-gray-950 flex justify-between w-full fixed left-0 right-0 items-center py-2 px-6">
+    <div class="flex gap-2">
+        <i id="hambtn" class="block md:hidden ri-menu-line text-2xl text-white z-30"></i>
+    <div class="md:flex hidden md:flex-col md:ml-30">
+        <p id="" class="transition-all text-gray-950  duration-300 text-sm font-extrabold">Dashboard</p>
+            <p id="" class="transition-all text-gray-950  duration-300 text-sm font-extrabold">Welcome Back, Admin 👏</p>
+            </div>
+    <div class="flex md:hidden md:flex-col items-center gap-1 md:ml-50">
+     <img src="/images/1757252975291-removebg-preview.png" class="w-6 h-6">
+     <p id="" class="transition-all text-white duration-300 text-sm font-extrabold"> TVMI Ministry</p>
+         </div>
+    </div>
+    <div class="flex gap-3 items-center">
+     <div class="relative">
+      <i class="ri-notification-line text-xl"></i>
+            <p class="notifyno text-white absolute top-0 right-0 left-3  bg-red-600 px-1 h-3 w-3 rounded-full text-center text-[10px]"></p>
+     </div>
+    <div class="rounded-full bg-white border p-2 h-8 w-8 flex justify-center items-center">
+        <a href="index.html">
+            <i class="ri-group-line text-black text-2xl"></i>
+        </a>
+        
+    </div>
+    </div>
+    
+</div>  
+<!-- Mobile menu -->
+<div class=" md:hidden  ">
+    <div id="sideebar" class="bg-gray-950 h-screen text-white fixed p-5 w-0 invisible transition-all ease-in duration-200">
+        <i id="clossebtn" class="block md:hidden ri-close-line text-2xl text-white z-30"></i>
+        <div class="flex md:hidden flex-col w-full py-3">
+            <p class="textss transition-all text-white  duration-300 text-sm font-extrabold">Dashboard</p>
+                <p class="textss transition-all text-white  duration-300 text-sm font-extrabold">Welcome Back,👏</p>
+                </div>
+      <div class="mt-5 flex flex-col gap-3">
+          <a href="dashbord.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-dashboard-line text-2xl"></i>
+              <p id="" class="font-bold">Dashboard</p>
+          </div>
+          </a>
+  
+          <a href="members.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-group-line text-2xl"></i>
+              <p id="" class="font-bold">Members</p>
+          </div>
+          </a>
+  
+          <a href="events.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-calendar-event-line text-2xl"></i>
+              <p id="" class="font-bold">Events</p>
+          </div>
+          </a>
+  
+          <a href="prayerreq.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-hand-heart-line text-2xl"></i>
+              <p id="" class="font-bold">Prayer Request</p>
+          </div>
+          </a>
+  
+          <a href="messages.html" class="nav-link active hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-mail-line text-2xl"></i>
+              <p id="" class="font-bold">Messages</p>
+          </div>
+          </a>
+  
+          <a href="images.html" class="nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <div class="textss flex gap-4 items-center">
+              <i class="ri-settings-3-line text-2xl"></i>
+              <p id="" class="font-bold">Gallery</p>
+          </div>
+          </a>
+  
+          <a href="" class="mt-10">
+              <div class="textss flex gap-4 items-center nav-link hover:bg-gray-800 hover:p-2 transition-all rounded-lg duration-100 delay-0 ease-in">
+              <i class="ri-logout-box-r-line text-2xl"></i>
+              <p id="" class="font-bold">Logout</p>
+          </div>
+          </a>
+      </div>
+    </div>
+  </div>
+
+    <div id="textlong" class="px-5 md:pl-30 md:pr-5 mt-20 md:mt-15 mr-0 w-full">
+
+        <div id="messages" class="flex flex-col shadow p-4 gap-4 w-full justify-center items-center">
+        
+        </div>
+    </div>
+    </div>
+    <div id="loading" class="hidden fixed inset-0 z-[9999] bg-black/30 items-center justify-center">
+        
+        <div class="w-12 h-12 border-4 border-gray-100 border-t-yellow-500 rounded-full animate-spin">
+        </div>
+    </div>
+    <div id="modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/50 p-4">
+      <div id="modalbox" class="relative md:left-20 gap-4 justify-center items-start p-4 flex h-auto w-full max-w-lg overflow-hidden flex-col rounded-2xl bg-white shadow-2xl">
+   <h2 class="text-3xl font-extrabold">Message</h2>
+   <p><strong>Name:</strong> <span id="name"></span></p>
+   <p><strong>Email:</strong> <span id="email"></span></p>
+   
+   <p><strong>Subject:</strong> <span id="subject"></span></p>
+   <p class="max-w-xl text-sm"><strong>Message:</strong> <span id="message"></span>
+    </p>
+
+    <i id="closemodal" class="ri-close-line text-2xl text-black"></i>
+      </div>
+    </div>
+    <script type="module" src="/src/api/axios.js"></script>
+    <script type="module" src="/src/verifyDahboard.js"></script>
+    <script type="module" src="/src/dash.js"></script>
+    <script type="module" src="/src/notify.js"></script>
+    <script type="module" src="/src/logout.js"></script>
+    <script type="module" src="/src/messages.js"></script>
+
+</body>
+</html>
