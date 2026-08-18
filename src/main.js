@@ -3,7 +3,10 @@ const MainSec = document.querySelectorAll('.MainSec')
 
 console.log("main js is running")
 window.addEventListener('load', () => {
-   document.getElementById("preloader").style.display = "none"
+   // document.getElementById("preloader").style.display = "none"
+   console.log("PAGE LOADED FIRE")
+   const preloader = document.getElementById("preloader")
+   console.log("PRELOADER", preloader)
 })
 
 const imagecont = document.querySelector(".images")
