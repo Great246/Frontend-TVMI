@@ -42,3 +42,4 @@ const refreshToken = async () => {
     return false
   }
 }
+refreshToken()

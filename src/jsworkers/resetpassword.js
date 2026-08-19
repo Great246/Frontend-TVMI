@@ -1,4 +1,6 @@
 import api from "../api/axios.js";
+import Toastify from "toastify-js";
+import "toastify-js/src/toastify.css";
 const resetform = document.getElementById("resetform")
 
 resetform.addEventListener('submit', async (e)=> {
@@ -8,9 +10,22 @@ resetform.addEventListener('submit', async (e)=> {
     const urlParams = new URLSearchParams(window.location.search);
     const token = urlParams.get("token");
     if (!password || !confirmPassword) {
-        return console.log("All fields are required")
+        Toastify({
+                   text: "All fields are required",
+                   duration: 3000,
+                   gravity: "top",
+                   position: "right",
+                   backgroundColor: "linear-gradient(to right, #ff0000, #ff4d4d)",
+                 }).showToast();
+                 return
     } else if (password !== confirmPassword) {
-        return console.log("Password doesn't match")
+       Toastify({
+                   text: "Password doesn't match",
+                   duration: 3000,
+                   gravity: "top",
+                   position: "right",
+                   backgroundColor: "linear-gradient(to right, #ff0000, #ff4d4d)",
+                 }).showToast(); return
     }
     const res = await api.post(`/api/auth/resetPassword/${token}`, { password }, {
       withCredentials: true,
