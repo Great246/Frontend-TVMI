@@ -1,4 +1,5 @@
 // throw new Error("GREATMAN MAIN JS TEST")
+const preloader = document.getElementById("preloader")
 console.log("GREATMAN 123456")
 const header = document.querySelectorAll('.Head')
 const MainSec = document.querySelectorAll('.MainSec')
@@ -10,8 +11,8 @@ const MainSec = document.querySelectorAll('.MainSec')
 //    const preloader = document.getElementById("preloader")
 //    console.log("PRELOADER", preloader)
 // })
-console.log("MAIN HAS STARTED")
-const preloader = document.getElementById("preloader")
+
+console.log("MAIN HAS STARTED", preloader)
 if (preloader) {
    preloader.style.display = "none"
 }
