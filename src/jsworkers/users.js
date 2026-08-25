@@ -59,7 +59,7 @@ const confirmPassword = document.getElementById("confirmPassword").value
     }
     
     const res = await api.post('/api/auth/register',
-        {fullname, Username, Email, phonenumber,password, confirmPassword}, {
+        {fullname, Username, Email, phonenumber, password, confirmPassword}, {
       withCredentials: true,
     })
 
