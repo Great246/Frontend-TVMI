@@ -8,7 +8,6 @@ const checkAdmin = async () => {
 
       if (response.data.user.role !== "admin") {
         window.location.href = "/"
-        return
       }
        document.body.classList.remove("hidden")
     } catch (error) {
