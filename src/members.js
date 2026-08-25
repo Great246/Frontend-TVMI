@@ -1,4 +1,3 @@
-import axios from "axios";
 import Toastify from "toastify-js";
 import "toastify-js/src/toastify.css";
 import api from "./api/axios.js";

@@ -1,6 +1,8 @@
 const header = document.querySelector('.Head')
 const MainSec = document.querySelectorAll('.MainSec')
 
+console.log("GREATMAN 123456")
+
 const headerinterOptions = {
    threshold: 0
 };
@@ -18,9 +20,6 @@ const headerinter = new IntersectionObserver(function (entries, headerinter) {
 MainSec.forEach(element => {
    headerinter.observe(element)
 });
-
-
-
 
 const about = document.querySelectorAll(".about")
 
