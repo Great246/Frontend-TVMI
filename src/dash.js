@@ -37,5 +37,3 @@ clossebtn.addEventListener("click", ()=> {
     sideebar.classList.toggle("w-55")
     textss.forEach(textT => textT.style.transform = "scale(0)")
 })
-
-updateBar()
