@@ -1,4 +1,6 @@
+
 const preloader = document.getElementById("preloader")
+
 import "./navbar.js"
 console.log("GREATMAN 123456")
 // throw new Error("GREATMAN MAIN JS TEST")
@@ -17,6 +19,7 @@ console.log("GREATMAN 123456")
 console.log("MAIN HAS STARTED", preloader)
 if (preloader) {
    preloader.style.display = "none"
+
 }
 
 
@@ -143,4 +146,3 @@ const aotherObserver3 = new IntersectionObserver (function (entries, aotherObser
 aboutpicri.forEach(element => {
    aotherObserver3.observe(element)
 });
-
