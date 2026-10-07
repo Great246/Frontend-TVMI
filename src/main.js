@@ -3,18 +3,8 @@ const preloader = document.getElementById("preloader")
 
 import "./navbar.js"
 console.log("GREATMAN 123456")
-// throw new Error("GREATMAN MAIN JS TEST")
+const MainSec = document.querySelectorAll(".MainSec")
 
-// const header = document.querySelectorAll('.Head')
-// const MainSec = document.querySelectorAll('.MainSec')
-
-// console.log("main js is running")
-// window.addEventListener('load', () => {
-//    // document.getElementById("preloader").style.display = "none"
-//    console.log("PAGE LOADED FIRE")
-//    const preloader = document.getElementById("preloader")
-//    console.log("PRELOADER", preloader)
-// })
 
 console.log("MAIN HAS STARTED", preloader)
 if (preloader) {
