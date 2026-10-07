@@ -24,7 +24,7 @@ api.interceptors.response.use((response) => {
     hideloading()
     const originalRequest = error.config
 
-    if (error.response?.status === 401 && !originalRequest._retry) {
+    if (error.response?.status === 401 && !originalRequest._retry && originalRequest.url !== "/api/auth/refresh") {
         originalRequest._retry = true
         try {
            await api.post('/api/auth/refresh')
